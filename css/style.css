@@ -1,0 +1,538 @@
+* {
+	margin: 0;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+:root {
+	--DesaturatedRed: hsl(0, 36%, 70%);
+	--SoftRed: hsl(0, 93%, 68%);
+	--DarkGrayishRed: hsl(0, 6%, 24%);
+	--Linear-135deg-from: hsl(0, 0%, 100%),
+		to hsl(0, 100%, 98%);
+	--Linear-135deg-from: hsl(0, 80%, 86%),
+		to hsl(0, 74%, 74%);
+}
+@font-face {
+	font-family: josefin;
+	src: url(/fonts/JosefinSans[wght].ttf);
+}
+main {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	font-family: josefin;
+}
+section {
+	width: 100%;
+}
+.holderLR {
+	display: flex;
+	flex-direction: row;
+}
+.right {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 50%;
+	background-image: url(/images/hero-desktop.jpg);
+}
+@media only screen and (max-width: 320px) {
+	main {
+		height: fit-content;
+	}
+	.logo {
+		width: 40%;
+		height: 4vh;
+		padding: 25px;
+	}
+	.holderLR {
+		flex-direction: column-reverse;
+	}
+	.left {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.left p {
+		text-align: center;
+		color: var(--DesaturatedRed);
+		font-size: 14px;
+		width: 80%;
+		padding-top: 13px;
+		padding-bottom: 13px;
+	}
+	.right {
+		background-image: url(/images/hero-mobile.jpg);
+		width: 100%;
+		height: 30vh;
+		background-size: contain;
+	}
+	h1 {
+		padding-top: 40px;
+		width: 60%;
+		text-align: center;
+		font-size: 36px;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+	span {
+		color: var(--DesaturatedRed);
+		font-weight: 300;
+		font-size: 36px;
+	}
+	.button {
+		display: flex;
+		width: 80%;
+		padding-bottom: 25px;
+	}
+	input {
+		width: 100%;
+		padding: 15px;
+		border-radius: 100vmax;
+		outline: none;
+		border: 1px solid
+			var(--DesaturatedRed);
+	}
+	input::placeholder {
+		color: var(--DesaturatedRed);
+		padding-left: 10px;
+	}
+	button {
+		margin-right: 10px;
+		position: absolute;
+		right: 10px;
+		padding: 12px;
+		border-radius: 100vmax;
+		width: 22%;
+		border: none;
+		background: hsl(0, 80%, 86%);
+		cursor: pointer;
+	}
+}
+@media only screen and (min-width: 320px) {
+	main {
+		height: fit-content;
+	}
+	.logo {
+		width: 29%;
+		height: 4vh;
+		padding: 25px;
+	}
+	.holderLR {
+		flex-direction: column-reverse;
+	}
+	.left {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.left p {
+		text-align: center;
+		color: var(--DesaturatedRed);
+		font-size: 14px;
+		width: 95%;
+		padding-top: 13px;
+		padding-bottom: 18px;
+	}
+	.right {
+		background-image: url(/images/hero-mobile.jpg);
+		width: 100%;
+		height: 50vh;
+	}
+	h1 {
+		padding-top: 0px;
+		width: 60%;
+		text-align: center;
+		font-size: 36px;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+	span {
+		color: var(--DesaturatedRed);
+		font-weight: 300;
+		font-size: 36px;
+	}
+	.button {
+		display: flex;
+		width: 80%;
+		padding-bottom: 25px;
+	}
+	input {
+		color: var(--DarkGrayishRed);
+		width: 100%;
+		padding: 15px;
+		border-radius: 100vmax;
+		outline: none;
+		border: 1px solid
+			var(--DesaturatedRed);
+	}
+	input::placeholder {
+		color: var(--DesaturatedRed);
+		padding-left: 10px;
+	}
+	button {
+		margin-right: 10px;
+		position: absolute;
+		right: 10px;
+		padding: 12px;
+		border-radius: 100vmax;
+		width: 22%;
+		border: none;
+		background: hsl(0, 80%, 86%);
+		cursor: pointer;
+	}
+}
+@media only screen and (min-width: 320px) and (min-height: 800px) {
+	.logo {
+		width: 40%;
+	}
+	.right {
+		height: 34vh;
+	}
+}
+@media only screen and (min-width: 375px) {
+	.logo {
+		width: 34%;
+		height: 5vh;
+		padding: 25px;
+	}
+	h1 {
+		width: 70%;
+		padding-top: 40px;
+	}
+	.left p {
+		font-size: 14px;
+		width: 80%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+@media only screen and (min-width: 375px) and (min-height: 800px) {
+	.logo {
+		width: 28%;
+		height: 3vh;
+		padding: 25px;
+	}
+	h1 {
+		width: 70%;
+		padding: 0;
+		font-weight: 600;
+		font-size: 44px;
+	}
+	.left p {
+		font-size: 17px;
+		width: 95%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		font-weight: 350;
+	}
+	.right {
+		background-size: contain;
+		height: 40vh;
+	}
+}
+@media only screen and (min-width: 414px) {
+	.left p {
+		font-size: 19px;
+	}
+}
+@media only screen and (min-width: 425px) {
+	h1 {
+		width: 50%;
+	}
+}
+@media only screen and (min-width: 481px) {
+	.logo {
+		height: 5vh;
+		width: 40%;
+	}
+	h1 {
+		padding-top: 40px;
+	}
+	.right {
+		background-size: cover;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.logo {
+		height: 8vh;
+		width: 42%;
+	}
+	h1 {
+		padding-top: 40px;
+		font-size: 50px;
+		width: 40%;
+	}
+	span {
+		font-size: 50px;
+	}
+	.left p {
+		font-size: 28px;
+	}
+	.right {
+		background-size: cover;
+	}
+	.button {
+		width: 50%;
+	}
+	button {
+		margin-right: 150px;
+		width: 12%;
+		padding: 18px;
+	}
+	input {
+		padding: 20px;
+		font-size: 16px;
+	}
+	input:placeholder {
+		font-size: 25px;
+	}
+}
+@media only screen and (min-width: 820px) {
+	.logo {
+		height: 5vh;
+		width: 30%;
+	}
+	.button {
+		width: 60%;
+	}
+	button {
+		margin-right: 150px;
+		width: 12%;
+		padding: 20px;
+	}
+	input {
+		padding: 20px;
+		font-size: 18px;
+	}
+	input:placeholder {
+		font-size: 32px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.logo {
+		height: 7vh;
+	}
+	.transparentbg {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		z-index: -1;
+	}
+	.holderLR {
+		display: flex;
+		flex-direction: row;
+	}
+	.left {
+		width: 50%;
+		justify-content: left;
+		align-items: start;
+		padding-left: 20px;
+		margin-top: 80px;
+	}
+	.left p {
+		text-align: left;
+		font-size: 18px;
+		padding-top: 70px;
+		padding-bottom: 55px;
+	}
+	h1 {
+		text-align: left;
+		width: 80%;
+		font-size: 60px;
+	}
+	span {
+		font-size: 60px;
+	}
+	.right {
+		top: 0;
+		right: 0;
+		position: absolute;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 100vh;
+		width: 50%;
+		background-image: url(/images/hero-desktop.jpg);
+	}
+	button {
+		left: 0;
+		margin-left: 250px;
+	}
+	footer {
+		width: 40%;
+	}
+	.attribution {
+		margin-top: 80px;
+		font-size: 11px;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.logo {
+		height: 6vh;
+		width: 18%;
+		padding-left: 40px;
+	}
+	.left {
+		padding-left: 40px;
+	}
+	h1 {
+		width: 50%;
+	}
+	.left p {
+		font-size: 20px;
+	}
+	button {
+		width: 8%;
+		margin-left: 320px;
+	}
+}
+@media only screen and (min-width: 1272px) {
+	h1 {
+		font-size: 80px;
+	}
+	.left p {
+		font-size: 20px;
+		width: 85%;
+		padding-top: 30px;
+	}
+	.button {
+		width: 70%;
+	}
+	button {
+		margin-left: 400px;
+	}
+	.attribution {
+		margin-top: 60px;
+		font-size: 13px;
+	}
+}
+@media only screen and (min-width: 1272px) and (min-height: 645px) {
+	.logo {
+		width: 15%;
+		padding-left: 55px;
+	}
+	h1 {
+		font-size: 65px;
+	}
+	.left {
+		margin-top: 10px;
+		padding-left: 55px;
+	}
+	.left p {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.button {
+		width: 70%;
+	}
+	button {
+		margin-left: 420px;
+	}
+	.attribution {
+		margin-top: 60px;
+		font-size: 13px;
+	}
+}
+@media only screen and (min-width: 1400px) {
+	.logo {
+		width: 12%;
+		height: 4vh;
+		padding-left: 75px;
+	}
+	h1 {
+		font-size: 85px;
+	}
+	span {
+		font-size: 85px;
+	}
+	.left {
+		margin-top: 50px;
+		padding-left: 75px;
+	}
+	.left p {
+		padding-top: 30px;
+		padding-bottom: 40px;
+		width: 80%;
+	}
+	.button {
+		width: 70%;
+	}
+	button {
+		margin-left: 500px;
+		width: 8%;
+	}
+	.attribution {
+		margin-top: 60px;
+		font-size: 16px;
+	}
+}
+@media only screen and (min-width: 1440px) {
+	.right {
+		right: 0;
+	}
+}
+@media only screen and (min-width: 1580px) {
+	.left p {
+		width: 70%;
+	}
+	button {
+		margin-left: 550px;
+		width: 8%;
+	}
+}
+@media only screen and (min-width: 1890px) {
+	.logo {
+		height: 6vh;
+		padding-left: 130px;
+	}
+	.left {
+		padding-left: 130px;
+	}
+	.left p {
+		font-size: 25px;
+	}
+	input {
+		font-size: 20px;
+	}
+	button {
+		width: 7%;
+		margin-left: 600px;
+	}
+	.button {
+		width: 60%;
+	}
+	.attribution {
+		font-size: 18px;
+	}
+}
+@media only screen and (min-width: 2200px) {
+	.logo {
+		height: 6vh;
+        width: 10%;
+        padding-left: 200px;
+	}
+    .left{
+    padding-left: 200px;
+    }
+    h1{
+        font-style: 75px;
+    }
+	.left p {
+        font-size: 29px;
+        width: 70%;
+	}
+    input{
+        padding: 30px;
+        font-size: 20px;
+    }
+    button{
+        padding: 30px;
+        margin-left: 750px;
+    }
+}
+@media only screen and (min-width: 2275px) {
+}

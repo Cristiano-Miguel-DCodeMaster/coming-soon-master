@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
   <style>
     .attribution { 
@@ -13,34 +13,42 @@
       text-align: center;
     }
     .attribution a { 
-      color: hsl(228, 45%, 44%); 
+      color: hsl(0, 36%, 70%); 
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 <main>
   <section>
-    <img width="158" height="33" src="images/logo.svg" alt="">
-      <h1><span class="span">We're</span> coming soon</h1>
-    
-      <p>
-        Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our launch deals.
-      </p>
-    
-      <div class="button">
-        <input type="text" name="" id="email" placeholder="Email Address">
-        <button>
-          <img width="12" height="20" src="images/icon-arrow.svg" alt="">
-        </button>
+      <img class="logo" width="158" height="33" src="images/logo.svg" alt="LOGO">
+      <div class="holderLR">
+        <img class="transparentbg" width="830" height="800" src="images/bg-pattern-desktop.svg" alt="background">
+        <div class="left">
+          <h1><span class="span">We're</span> coming soon</h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+          <div class="button">
+            <input type="email" name="" id="email" placeholder="Email Address">
+            <button>
+              <img width="12" height="20" src="images/icon-arrow.svg" alt="arrow">
+            </button>
+          </div>
+        </div>
+
+      <div class="right">
+
       </div>
+</div>
   </section>
 </main>
   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="github.com/cristiano-miguel-dcodemaster">DCode Master</a>.
     </p>
   </footer>
 </body>
