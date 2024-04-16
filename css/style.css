@@ -59,7 +59,7 @@ section {
 		justify-content: center;
 		align-items: center;
 	}
-	.left p {
+	.hello {
 		text-align: center;
 		color: var(--DesaturatedRed);
 		font-size: 14px;
@@ -90,6 +90,8 @@ section {
 		display: flex;
 		width: 80%;
 		padding-bottom: 25px;
+		flex-direction: column;
+		margin-left: -35px;
 	}
 	input {
 		width: 100%;
@@ -106,13 +108,23 @@ section {
 	button {
 		margin-right: 10px;
 		position: absolute;
-		right: 10px;
+		right: 0px;
 		padding: 12px;
 		border-radius: 100vmax;
 		width: 22%;
 		border: none;
 		background: hsl(0, 80%, 86%);
 		cursor: pointer;
+	}
+	.error{
+		position: absolute;
+		right: 0;
+		margin-right: 65px;
+		margin-top: 10px;
+	}
+	.alertsms{
+	margin-left: 0%;
+	color: var(--SoftRed);
 	}
 }
 @media only screen and (min-width: 320px) {
@@ -136,7 +148,7 @@ section {
 		justify-content: center;
 		align-items: center;
 	}
-	.left p {
+	.hello {
 		text-align: center;
 		color: var(--DesaturatedRed);
 		font-size: 14px;
@@ -166,6 +178,8 @@ section {
 		display: flex;
 		width: 80%;
 		padding-bottom: 25px;
+		flex-direction: column;
+		margin-left: -25px;
 	}
 	input {
 		color: var(--DarkGrayishRed);
@@ -183,13 +197,26 @@ section {
 	button {
 		margin-right: 10px;
 		position: absolute;
-		right: 10px;
+		right: -10px;
 		padding: 12px;
 		border-radius: 100vmax;
 		width: 22%;
 		border: none;
-		background: hsl(0, 80%, 86%);
+		background: hsl(0, 74%, 74%);
 		cursor: pointer;
+	}
+	button:hover{
+		background: hsl(0, 80%, 86%);
+	}
+	.error{
+		position: absolute;
+		right: 0;
+		margin-right: 71px;
+		margin-top: 10px;
+	}
+	.alertsms{
+	margin-left: 1%;
+	color: var(--SoftRed);
 	}
 }
 @media only screen and (min-width: 320px) and (min-height: 800px) {
@@ -210,11 +237,17 @@ section {
 		width: 70%;
 		padding-top: 40px;
 	}
-	.left p {
+	.hello {
 		font-size: 14px;
 		width: 80%;
 		padding-top: 30px;
 		padding-bottom: 30px;
+	}
+	.error{
+		margin-right: 90px;
+	}
+	.alertsms{
+		margin-left: 3%;
 	}
 }
 @media only screen and (min-width: 375px) and (min-height: 800px) {
@@ -229,7 +262,7 @@ section {
 		font-weight: 600;
 		font-size: 44px;
 	}
-	.left p {
+	.hello {
 		font-size: 17px;
 		width: 95%;
 		padding-top: 30px;
@@ -242,13 +275,26 @@ section {
 	}
 }
 @media only screen and (min-width: 414px) {
-	.left p {
+	.hello {
 		font-size: 19px;
+	}
+	.error{
+		margin-right: 100px;
 	}
 }
 @media only screen and (min-width: 425px) {
 	h1 {
 		width: 50%;
+	}
+	.button{
+		width: 70%;
+	}
+	button{
+		width: 18%;
+		right: 10px;
+	}
+	.error{
+		margin-right: 105px;
 	}
 }
 @media only screen and (min-width: 481px) {
@@ -261,6 +307,9 @@ section {
 	}
 	.right {
 		background-size: cover;
+	}
+	.error{
+		margin-right: 110px;
 	}
 }
 @media only screen and (min-width: 768px) {
@@ -276,7 +325,7 @@ section {
 	span {
 		font-size: 50px;
 	}
-	.left p {
+	.hello {
 		font-size: 28px;
 	}
 	.right {
@@ -297,14 +346,19 @@ section {
 	input:placeholder {
 		font-size: 25px;
 	}
+	.error{
+		margin-right: 260px;
+		width: 5%;
+		height: 5vh;
+	}
 }
 @media only screen and (min-width: 820px) {
 	.logo {
-		height: 5vh;
+		height: 6vh;
 		width: 30%;
 	}
 	.button {
-		width: 60%;
+		width: 50%;
 	}
 	button {
 		margin-right: 150px;
@@ -323,7 +377,7 @@ section {
 	.logo {
 		height: 6vh;
         width: 20%;
-        padding-left: 30px;
+        padding-left: 50px;
 	}
 	.transparentbg {
         display: block;
@@ -340,14 +394,14 @@ section {
 		width: 50%;
 		justify-content: left;
 		align-items: start;
-		padding-left: 30px;
-		margin-top: 80px;
+		padding-left: 50px;
+		margin-top: 0px;
 	}
-	.left p {
+	.hello {
 		text-align: left;
-		font-size: 18px;
-		padding-top: 70px;
-		padding-bottom: 55px;
+		font-size: 20px;
+		padding-top: 30px;
+		padding-bottom: 35px;
 	}
 	h1 {
 		text-align: left;
@@ -367,9 +421,19 @@ section {
 		width: 50%;
 		background-image: url(/images/hero-desktop.jpg);
 	}
+	.button{
+		margin-left: 0;
+		width: 65%;
+	}
 	button {
 		left: 0;
-		margin-left: 250px;
+		margin-left: 300px;
+	}
+	.error{
+		margin-left: 240px;
+		width: 5%;
+		height: 7vh;
+		left: 0;
 	}
 	footer {
 		width: 40%;
@@ -391,7 +455,7 @@ section {
 	h1 {
 		width: 50%;
 	}
-	.left p {
+	.hello {
 		font-size: 20px;
 	}
 	button {
@@ -431,18 +495,28 @@ section {
 		margin-top: 10px;
 		padding-left: 55px;
 	}
-	.left p {
+	.hello {
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
 	.button {
-		width: 70%;
+		width: 65%;
 	}
 	button {
 		margin-left: 420px;
 	}
+	.button{
+		margin-left: 0;
+		width: 65%;
+	}
+	.error{
+		margin-left: 360px;
+		width: 4%;
+		height: 7vh;
+		left: 0;
+	}
 	.attribution {
-		margin-top: 60px;
+		margin-top: 15px;
 		font-size: 13px;
 	}
 }
@@ -462,7 +536,7 @@ section {
 		margin-top: 50px;
 		padding-left: 75px;
 	}
-	.left p {
+	.hello {
 		padding-top: 30px;
 		padding-bottom: 40px;
 		width: 80%;
@@ -485,7 +559,7 @@ section {
 	}
 }
 @media only screen and (min-width: 1580px) {
-	.left p {
+	.hello {
 		width: 70%;
 	}
 	button {
@@ -501,7 +575,7 @@ section {
 	.left {
 		padding-left: 130px;
 	}
-	.left p {
+	.hello {
 		font-size: 25px;
 	}
 	input {
@@ -530,7 +604,7 @@ section {
     h1{
         font-style: 75px;
     }
-	.left p {
+	.hello {
         font-size: 29px;
         width: 70%;
 	}
