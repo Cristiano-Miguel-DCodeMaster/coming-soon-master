@@ -1,4 +1,4 @@
-document.querySelector('.button')
+document.getElementById('button')
     .addEventListener('submit', (event) => {
         event.preventDefault();
         const email = document.getElementById('email').value;
