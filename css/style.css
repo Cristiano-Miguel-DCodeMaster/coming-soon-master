@@ -269,6 +269,12 @@ section {
 		padding-bottom: 30px;
 		font-weight: 350;
 	}
+	button{
+		right: 10px;
+	}
+	.error{
+		margin-right: 110px;
+	}
 	.right {
 		background-size: contain;
 		height: 40vh;
@@ -467,7 +473,7 @@ section {
 	h1 {
 		font-size: 80px;
 	}
-	.left p {
+	.hello {
 		font-size: 20px;
 		width: 85%;
 		padding-top: 30px;
@@ -505,6 +511,9 @@ section {
 	button {
 		margin-left: 420px;
 	}
+	button img{
+		width: 30%;
+	}
 	.button{
 		margin-left: 0;
 		width: 65%;
@@ -514,6 +523,9 @@ section {
 		width: 4%;
 		height: 7vh;
 		left: 0;
+	}
+	.alertsms{
+		padding-top: 10px;
 	}
 	.attribution {
 		margin-top: 15px;
@@ -557,14 +569,32 @@ section {
 	.right {
 		right: 0;
 	}
+	.hello{
+		font-size: 22px;
+	}
+	.error{
+		margin-left: 435px;
+		margin-top: 9px;
+		width: 3%;
+		height: 5vh;
+	}
+	.alertsms{
+		font-size: 20px;
+		padding-top: 10px;
+	}
 }
 @media only screen and (min-width: 1580px) {
 	.hello {
 		width: 70%;
+		font-size: 21px;
 	}
 	button {
 		margin-left: 550px;
 		width: 8%;
+	}
+	.error{
+		margin-left: 490px;
+		margin-top: 12px;
 	}
 }
 @media only screen and (min-width: 1890px) {
@@ -588,6 +618,11 @@ section {
 	.button {
 		width: 60%;
 	}
+	.error{
+		margin-left: 535px;
+		width: 2.5%;
+		height: 5vh;
+	}
 	.attribution {
 		font-size: 18px;
 	}
@@ -610,12 +645,22 @@ section {
 	}
     input{
         padding: 30px;
-        font-size: 20px;
+        font-size: 22px;
     }
     button{
         padding: 30px;
         margin-left: 750px;
     }
-}
-@media only screen and (min-width: 2275px) {
+	.button{
+		width: 55%;
+	}
+	.error{
+		margin-left:700px;
+		margin-top: 25px;
+		width: 2%;
+		height: 5vh;
+	}
+	.alertsms{
+		font-size: 27px;
+	}
 }
