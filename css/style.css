@@ -116,13 +116,21 @@ section {
 		background: hsl(0, 80%, 86%);
 		cursor: pointer;
 	}
+	.error0{
+		display: none;
+	}
 	.error{
+		display: block;
 		position: absolute;
 		right: 0;
 		margin-right: 65px;
 		margin-top: 10px;
 	}
+	.alertsms0{
+		display: none;
+	}
 	.alertsms{
+		display: block;
 	margin-left: 0%;
 	color: var(--SoftRed);
 	}
@@ -208,13 +216,21 @@ section {
 	button:hover{
 		background: hsl(0, 80%, 86%);
 	}
+	.error0{
+		display: none;
+	}
 	.error{
+		display: block;
 		position: absolute;
 		right: 0;
 		margin-right: 71px;
 		margin-top: 10px;
 	}
+	.alertsms0{
+		display: none;
+	}
 	.alertsms{
+	display: block;
 	margin-left: 1%;
 	color: var(--SoftRed);
 	}
