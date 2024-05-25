@@ -133,6 +133,7 @@ section {
 		display: block;
 	margin-left: 0%;
 	color: var(--SoftRed);
+	font-size: 14px;
 	}
 }
 @media only screen and (min-width: 320px) {
@@ -233,6 +234,7 @@ section {
 	display: block;
 	margin-left: 1%;
 	color: var(--SoftRed);
+	font-size: 14px;
 	}
 }
 @media only screen and (min-width: 320px) and (min-height: 800px) {
@@ -439,7 +441,7 @@ section {
 		position: absolute;
 		background-size: cover;
 		background-repeat: no-repeat;
-		height: 100vh;
+		height: 115vh;
 		width: 50%;
 		background-image: url(/images/hero-desktop.jpg);
 	}
@@ -502,6 +504,49 @@ section {
 	}
 	.attribution {
 		margin-top: 60px;
+		font-size: 13px;
+	}
+}
+@media only screen and (min-width: 1272px) and (min-height: 611px) {
+	.logo {
+		width: 15%;
+		padding-left: 55px;
+	}
+	h1 {
+		font-size: 65px;
+	}
+	.left {
+		margin-top: 10px;
+		padding-left: 55px;
+	}
+	.hello {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.button {
+		width: 65%;
+	}
+	button {
+		margin-left: 420px;
+	}
+	button img{
+		width: 30%;
+	}
+	.button{
+		margin-left: 0;
+		width: 65%;
+	}
+	.error{
+		margin-left: 360px;
+		width: 4%;
+		height: 7vh;
+		left: 0;
+	}
+	.alertsms{
+		padding-top: 10px;
+	}
+	.attribution {
+		margin-top: 15px;
 		font-size: 13px;
 	}
 }
