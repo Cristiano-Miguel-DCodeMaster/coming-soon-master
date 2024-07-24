@@ -1,5 +1,5 @@
-document.getElementById('button')
-    .addEventListener('submit', (event) => {
+const button = document.getElementById('button');
+    button.addEventListener('submit', (event) => {
         event.preventDefault();
         const email = document.getElementById('email').value;
         const alertsms = document.querySelector('.alertsms0');
@@ -10,5 +10,7 @@ document.getElementById('button')
             error.classList.remove('error0');
             error.classList.add('error');
             alertsms.innerHTML = "Please provide a valid email";
+          } else {
+            button.submit();
         }
     });
